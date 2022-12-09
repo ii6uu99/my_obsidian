@@ -1,0 +1,254 @@
+{
+  "choices": [
+    {
+      "id": "446dde5d-93ea-4267-9804-cc6de46ff6fd",
+      "name": "dataview",
+      "type": "Multi",
+      "command": false,
+      "choices": [
+        {
+          "id": "21ec2a4a-18cc-47e6-975f-8ffada1fc246",
+          "name": "cupture-dataview查询-目录-文件名",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "未分类/查询_{{DATE:x}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": true,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "---\nobsidianUIMode: preview\n---\n\n```dataview\nlist from \"\"\nwhere contains(file.name,\"{{value:输入}}\")\n\n```"
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "",
+            "insertAtEnd": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "prepend": false,
+          "task": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": true,
+          "openFileInMode": "preview"
+        }
+      ]
+    },
+    {
+      "id": "47a941ff-8ab6-473e-b877-9dd8934fe68f",
+      "name": "提示板",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "<%*\nlet selection = window.getSelection();\nlet choice = await tp.system.suggester(\n  [ \"✏️ note\", \"📘 abstract\", \"ℹ️ info\", \"🔥 tip\", \"✅ success\", \n  \"❓ question\", \"⚠️ warning\", \"❌ fail\", \"🪲 bug\", \"📋 example\", \n  \"✍️ quote\", \"💡 comment\", \"😝 LOL\" ], \n  [ 0,1,2,3,4,5,6,7,8,9,10,11,12 ]\n  );\nconst admonitions = [ \n  [\"ad-note\", \"重点\"], [\"ad-abstract\", \"摘要\"], [\"ad-info\", \"资讯\"], [\"ad-tip\", \"技巧\"], [\"ad-success\", \"完成\"], \n  [\"ad-question\", \"问题\"], [\"ad-warning\", \"警告\"], [\"ad-fail\", \"失败\"], [\"ad-error\", \"错误\"], [\"ad-example\", \"范例\"], \n  [\"ad-quote\", \"引用\"], [\"ad-comment\", \"建议\"], [\"ad-LOL\", \"好笑\"]\n];\n\nadmonition = admonitions[choice][0];\ntitle = admonitions[choice][1];\n\nconst nl = String.fromCharCode(10);\n\nchoice = \"```\" + admonition + nl +\n  //\"collapse: on\" + nl +\n  \"title: \" + title + nl + selection + nl +\n  \"```\";\n%>\n<% choice %>"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "ac004234-ebe6-4d38-bd8d-b5c7afe4dda3",
+      "name": "选中文本-添加提示板",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "```js quickadd\n//const selection = window.getSelection();\nconst selection = this.quickAddApi.utility.getSelectedText();\nconst aTexts =   [ \"✏️ note\", \"📘 abstract\", \"ℹ️ info\", \"🔥 tip\", \"✅ success\", \n  \"❓ question\", \"⚠️ warning\", \"❌ fail\", \"🪲 bug\", \"📋 example\",\n  \"✍️ quote\", \"💡 comment\", \"😝 LOL\" ];\nconst aValues = [ \"0\", \"1\", \"2\" , \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"10\", \"11\", \"12\" ];\nlet choice = await this.quickAddApi.suggester(aTexts, aValues);\n//console.log(\"choice\", choice);\n\nconst admonitions = [ \n  [\"ad-note\", \"重点\"], [\"ad-abstract\", \"摘要\"], [\"ad-info\", \"信息\"], [\"ad-tip\", \"技巧\"], [\"ad-success\", \"完成\"], \n  [\"ad-question\", \"问题\"], [\"ad-warning\", \"警告\"], [\"ad-fail\", \"失败\"], [\"ad-error\", \"错误\"], [\"ad-example\", \"范例\"], \n  [\"ad-quote\", \"引用\"], [\"ad-comment\", \"建议\"], [\"ad-LOL\", \"好笑\"]\n];\n\nadmonition = admonitions[choice][0];\ntitle = admonitions[choice][1];\n\n// 在脚本里，换行符号和倒引号不要在字符串里使用，改用String.fromCharCode()才不会出现解析错误\nconst nl = String.fromCharCode(10);\nconst backQuotes = String.fromCharCode(96) + String.fromCharCode(96) + String.fromCharCode(96);\n\nresult = backQuotes + admonition + nl +\n  \"title: \" + title + nl + selection + nl + backQuotes;\n\nreturn result;\n```"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "a5ea44fd-86da-49bd-932c-a335abf0e090",
+      "name": "打开主页",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "{{TEMPLATE:666模板/主页.md}}"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": true,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "a6bebe29-4f8e-4f0d-bbfc-8112396c7ab2",
+      "name": "标签多选",
+      "type": "Template",
+      "command": true,
+      "templatePath": "666模板/templater-note.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{VALUE:输入文件名}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false
+      },
+      "appendLink": false,
+      "incrementFileName": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "source"
+    },
+    {
+      "id": "96871a27-228c-4783-b495-bfa1b1fd0510",
+      "name": "测试2",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "---\ntags: ```js quickadd\nlet aInput await this.quickAddApi.checkboxPrompt(\n[\"#Notes/Topic\",\"#Notes/TBP\",\"#Work\",\"#DataScience\",\"#Probability\",\n\"#Statistics\"],\n[\"#Notes/Topic\",\"#Notes/TBP\"]);\nvar aInputWrapped aInput.map(input =>\"\\\"\" + input +\"\\\"\");\nconst input=aInput.join(\",\");\nconst inputWrapped=aInputWrapped.join(\",\")\nreturn `${input}`;\n```\n---"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "afb5ffb0-111a-4c57-9cbe-d306aba31d79",
+      "name": "macro-打开首页",
+      "type": "Macro",
+      "command": true,
+      "macroId": "a57cfd53-3a54-475e-b4fb-6dfc772cd8d4"
+    },
+    {
+      "id": "9d3100d4-38c1-4e5e-83b3-96149aaa456c",
+      "name": "macro-打开常用的笔记",
+      "type": "Macro",
+      "command": true,
+      "macroId": "ac0f4b12-2827-41f6-9354-916ec0a44910"
+    }
+  ],
+  "macros": [
+    {
+      "name": "打开首页",
+      "id": "a57cfd53-3a54-475e-b4fb-6dfc772cd8d4",
+      "commands": [
+        {
+          "name": "打开首页",
+          "type": "UserScript",
+          "id": "22797b2c-0f81-4034-9bcb-b803b9c81a79",
+          "path": "666模板/script/打开首页.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": true
+    },
+    {
+      "name": "打开常用笔记",
+      "id": "ac0f4b12-2827-41f6-9354-916ec0a44910",
+      "commands": [
+        {
+          "name": "打开常用的笔记",
+          "type": "UserScript",
+          "id": "bc1a1a98-43e5-4c3f-876d-9ac7b508a97d",
+          "path": "666模板/script/打开常用的笔记.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line",
+  "devMode": false
+}

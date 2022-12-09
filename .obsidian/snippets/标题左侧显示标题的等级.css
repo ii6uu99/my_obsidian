@@ -1,0 +1,68 @@
+/* 所有主題的共用樣式 */
+
+kbd {
+  border-radius: 3px;
+  padding: 1px 2px 0;
+  border: 1px solid gray;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+keybs,
+.keybs {
+  border: 1px solid gray;
+  font-size: 1em;
+  box-shadow: 1px 0 1px 0 #eee, 0 2px 0 2px #ccc, 0 2px 0 3px #444;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 2px 3px;
+  padding: 1px 5px;
+  white-space: nowrap;
+}
+
+.table-view-tr-header th, .cm-table-widget table thead tr th {
+  text-align: center;
+}
+
+/* H1~H6 hover顯示等級 BEGIN, copied from blue Topaz and made some changes */
+/* 閱讀與即時預覽(.markdown-preview-view)時顯示標題等級 */
+/* 安裝 obsidian-lapel 後即可不使用此CSS */
+.markdown-preview-view h2::before, 
+.is-live-preview .HyperMD-header-2::before {
+  content: 'H2';
+  position: absolute;
+  font-size: 0.7rem;
+  font-family: var(--default-font);
+  width: auto;
+  left: -35px;
+  padding: 0px 2px;
+  top: 20px;
+  opacity: 0.7;
+}
+
+.markdown-preview-view h3::before, 
+.is-live-preview .HyperMD-header-3::before {
+  content: 'H3';
+  position: absolute;
+  font-size: 0.7rem;
+  font-family: var(--default-font);
+  width: auto;
+  left: -35px;
+  padding: 0px 2px;
+  top: 20px;
+  opacity: 0.7;
+}
+
+.markdown-preview-view h4::before, 
+.is-live-preview .HyperMD-header-4::before {
+  content: 'H4';
+  position: absolute;
+  font-size: 0.7rem;
+  font-family: var(--default-font);
+  width: auto;
+  left: -35px;
+  padding: 0px 2px;
+  top: 20px;
+  opacity: 0.7;
+}

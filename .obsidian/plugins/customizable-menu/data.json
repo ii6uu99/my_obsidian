@@ -1,0 +1,40 @@
+{
+  "menuCommands": [
+    {
+      "name": "QuickAdd: 选中文本-添加提示板",
+      "id": "quickadd:choice:ac004234-ebe6-4d38-bd8d-b5c7afe4dda3",
+      "icon": "bus"
+    },
+    {
+      "name": "QuickAdd: 1-标签",
+      "id": "quickadd:choice:092578b2-89cb-4873-9870-fd5193ead201",
+      "icon": "activity"
+    },
+    {
+      "name": "Templater: Open Insert Template modal",
+      "id": "templater-obsidian:insert-templater",
+      "icon": "activity"
+    },
+    {
+      "name": "QuickAdd: cupture-dataview查询-目录-文件名",
+      "id": "quickadd:choice:21ec2a4a-18cc-47e6-975f-8ffada1fc246",
+      "icon": "airplay"
+    },
+    {
+      "id": "switcher:open",
+      "name": "快速切换: 打开快速切换",
+      "icon": "lucide-navigation",
+      "hotkeys": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "O"
+        }
+      ]
+    }
+  ],
+  "hideTitles": [
+    "全选"
+  ]
+}

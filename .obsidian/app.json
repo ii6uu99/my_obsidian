@@ -1,0 +1,11 @@
+{
+  "promptDelete": false,
+  "attachmentFolderPath": "./附件",
+  "newFileLocation": "folder",
+  "showLineNumber": false,
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "newFileFolderPath": "未分类",
+  "trashOption": "local",
+  "showFrontmatter": true
+}

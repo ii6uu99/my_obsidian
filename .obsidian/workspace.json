@@ -1,0 +1,424 @@
+{
+  "main": {
+    "id": "231ffbbc5baed3b6",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b09e0a06cc10e28",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f046edf7b230802c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未分类笔记/模板脚本-github.md",
+                "mode": "source",
+                "source": true
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "b7e46079685ffedd",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "666模板/1-2 yaml+勾选标签.md",
+                "mode": "source",
+                "source": true
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "bbda8bdeaaeb5c6f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2,
+        "stacked": true
+      },
+      {
+        "id": "9e0ccf0ebfabccb0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb4cd31d84dbf2f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "666模板/3-收藏=移动+输入文件名_手写标签_内容.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "47286359a2966312",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "030-obsidian笔记/2-2obsidian插件收集/给某个文件打开添加快捷键的插件.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "2dde6de9d42c2531",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "030-obsidian笔记/实践可用/选中文本-给文件名重命名.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "ba69b180596b908e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "03b7ae2510d1f81f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "9e2b845cd7aa0b01",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "666模板/选中文本-重命名文件名.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "e96afab929ae9ec1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "666模板/选中文本-重命名文件名.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "ef2d2e5bb8a2965d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "666模板/query.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "1a310345d2a94c1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "666模板/dataview.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "716bbadd1ba8798c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "666模板/templater-quickadd-daily1.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "62d439f073e8dc22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "030-obsidian笔记/gitignore用法.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "ae4ae9b53859d044",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 10
+      },
+      {
+        "id": "c112899d0bd5f20c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2732a0f3510d8e8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "666模板/1-1 yaml+手写标签.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "07e1997a00767f5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "666模板/测试4.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "297c4e554deb6649",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "030-obsidian笔记/实践可用/模板使用另一个模板的代码.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "5297406437f8d788",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "333-python笔记/python正则表达式可视化网址.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "dad3c3f4a395a178",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "030-obsidian笔记/好用的插件.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "358e7046bd6934b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "666模板/1-1 yaml+手写标签.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "cc8c9b8106b007d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "030-obsidian笔记/新建笔记即会自动添加预设模板.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "659bb89f7c4886a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "23446aee984091cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "730d0c90f72e481b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTimeReverse"
+              }
+            }
+          },
+          {
+            "id": "a19872e1a900bf57",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "单纯",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a90ae5d05078c2c9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "bbb05fd607ca234e",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300.5
+  },
+  "right": {
+    "id": "2f2155f0eb069d28",
+    "type": "split",
+    "children": [
+      {
+        "id": "fb3bcc1412fa07ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9782cd81b4533ddc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "030-obsidian笔记/gitignore用法.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cee15d997e646f53",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d73e3d68bc831c45",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "7d8333991fa34808",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "030-obsidian笔记/gitignore用法.md"
+              }
+            }
+          },
+          {
+            "id": "0c18eec38620df77",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "030-obsidian笔记/gitignore用法.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "active": "62d439f073e8dc22",
+  "lastOpenFiles": [
+    "666模板/templater-quickadd-daily1.md",
+    "666模板/测试3.md",
+    "666模板/1-1 yaml+手写标签.md",
+    "666模板/3-收藏=移动+输入文件名_手写标签_内容.md",
+    "666模板/2-归类=移动+输入文件名_手写标签.md",
+    "666模板/dataview查询.md",
+    "666模板/from-template-02.md",
+    "666模板/标签模板/未命名.md",
+    "主页/按钮.md",
+    "未分类笔记/网页vscode.md"
+  ]
+}

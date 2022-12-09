@@ -1,0 +1,140 @@
+
+/* 標題上下太接近了，加些padding空間 */
+.HyperMD-header.HyperMD-header-2.cm-line {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.HyperMD-header.HyperMD-header-3.cm-line {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+.HyperMD-header.HyperMD-header-4.cm-line {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+.HyperMD-header.HyperMD-header-5.cm-line {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+/* 頁籤上方加上顯著邊框 */
+.is-focused .mod-active .workspace-tab-header.is-active {
+  border-top: 3px solid orange;
+}
+
+/* 頁籤文字用強調色 */
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: rgb(var(--color-accent-rgb));
+}
+
+/* 大綱有序號列表上下太多 */
+.tree-item-inner ol {
+  line-height: var(--line-height-tight);
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+/*
+.tree-item .tree-item-self {
+  padding: 4px;
+}
+*/
+
+/* inline codeblock */
+.cm-s-obsidian .cm-inline-code {
+  color: var(--lavender) !important;
+}
+
+/* 外掛等對話窗加上邊框 */
+.modal.mod-settings, .modal.mod-community-plugin, 
+.modal.mod-community-theme {
+  border: 2px solid rgb(var(--color-accent-rgb));
+}
+
+/* Hover Editor加上邊框 */
+.popover-content {
+  border: 2px solid rgb(var(--color-accent-rgb));
+}
+
+/* callout 整個同色塊，不甚美觀 */
+/* .callout內含.callolut-title與.callout-content */
+/* Callout區塊最下方不要有padding, 最左側加邊條 */
+.callout {
+  padding: 8px 0px 0px 0px;  /* 上 右 下 左 */
+  border-left: 5px solid rgba(var(--callout-color));
+}
+
+/* .callout-title內含.callout-icon, .callout-title-inner, .callout-fold
+/* Callout標題列最左向右移, 下方填充8px，與內文區有8px的距離 */
+.callout-title {
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+
+/* icon向下移動 */
+.callout-icon {
+  margin-top: 8px;
+}
+
+/* .calloput-fold摺疊符號^與v符號緊接title後面，設成1時會在最右側 */
+.callout-title .callout-title-inner {
+  flex-grow: 0;
+}
+
+.callout-fold {
+  margin-left: 4px;
+}
+
+/* 內文區背景變暗 */
+.callout-content, .admonition-content {
+  background-color: rgba(var(--callout-color), 0.1);
+  padding: 0px 0px 0px 16px;
+}
+
+/* H1~H6 hover顯示等級 BEGIN, copied from blue Topaz and made some changes */
+/* 閱讀與即時預覽(.markdown-preview-view)時顯示標題等級 */
+/* 安裝 obsidian-lapel 後即可不使用此CSS */
+.markdown-preview-view h2::before, 
+.is-live-preview .HyperMD-header-2::before {
+  content: 'H2';
+  position: absolute;
+  font-size: 0.7rem;
+  font-family: var(--default-font);
+  width: auto;
+  left: -35px;
+  padding: 0px 2px;
+  top: 20px;
+  opacity: 0.7;
+}
+
+.markdown-preview-view h3::before, 
+.is-live-preview .HyperMD-header-3::before {
+  content: 'H3';
+  position: absolute;
+  font-size: 0.7rem;
+  font-family: var(--default-font);
+  width: auto;
+  left: -35px;
+  padding: 0px 2px;
+  top: 20px;
+  opacity: 0.7;
+}
+.markdown-preview-view h4::before, 
+.is-live-preview .HyperMD-header-4::before {
+  content: 'H4';
+  position: absolute;
+  font-size: 0.7rem;
+  font-family: var(--default-font);
+  width: auto;
+  left: -35px;
+  padding: 0px 2px;
+  top: 20px;
+  opacity: 0.7;
+}
+
+/* 表格標題列 */
+.cm-table-widget thead tr, .table-view-table thead tr {
+  background-color: rgb(var(--color-accent-rgb), 0.3);
+}

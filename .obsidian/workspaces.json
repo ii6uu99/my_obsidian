@@ -1,0 +1,203 @@
+{
+  "workspaces": {
+    "12": {
+      "main": {
+        "id": "231ffbbc5baed3b6",
+        "type": "split",
+        "children": [
+          {
+            "id": "f986a03a76e0a84e",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "fb71a68699985104",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "666模板/收藏文档的模板.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "7d78ec528ec27de3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "666模板/代办事项模板.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "stacked": true
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "659bb89f7c4886a8",
+        "type": "split",
+        "children": [
+          {
+            "id": "23446aee984091cf",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "730d0c90f72e481b",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "byModifiedTimeReverse"
+                  }
+                }
+              },
+              {
+                "id": "a19872e1a900bf57",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": true,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "a90ae5d05078c2c9",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300.5
+      },
+      "right": {
+        "id": "2f2155f0eb069d28",
+        "type": "split",
+        "children": [
+          {
+            "id": "fb3bcc1412fa07ee",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "9782cd81b4533ddc",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "666模板/收藏文档的模板.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "cee15d997e646f53",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "d73e3d68bc831c45",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "7d8333991fa34808",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "666模板/收藏文档的模板.md"
+                  }
+                }
+              },
+              {
+                "id": "0c18eec38620df77",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "666模板/收藏文档的模板.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              }
+            ],
+            "currentTab": 4
+          }
+        ],
+        "direction": "horizontal",
+        "width": 200
+      },
+      "floating": {
+        "id": "72445f719463ac98",
+        "type": "floating",
+        "children": [
+          {
+            "id": "2f76d5c26927407e",
+            "type": "window",
+            "children": [
+              {
+                "id": "640038090ef91357",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "64d33079bb6569ef",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "外观css-片段.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "direction": "vertical",
+            "x": 1327,
+            "y": 248,
+            "width": 446,
+            "height": 1000,
+            "maximize": false,
+            "zoom": 0
+          }
+        ]
+      },
+      "active": "730d0c90f72e481b"
+    }
+  },
+  "active": "12"
+}
